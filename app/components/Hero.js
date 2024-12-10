@@ -21,7 +21,7 @@ const Hero = () => {
   }
 
   return (
-    <section className="hero bg-cover bg-center h-[100vh] lg:h-[70vh] pt-9 md:pt-0 md:flex lg:items-center">
+    <section className="hero bg-cover bg-center h-[100vh]  pt-9 md:pt-0 md:flex lg:items-center">
       <div className="container mx-auto flex flex-col lg:flex-row px-4 py-8 sm:px-6 lg:px-8">
         {/* Left Text */}
         <div className="text-center lg:text-left lg:max-w-xl xl:max-w-2xl lg:flex-1 mb-8 md:mb-0">
@@ -33,11 +33,61 @@ const Hero = () => {
               I&apos;m John Lery
             </span>
           </h2>
-          <p className="text-lg mb-4">
+          <p className="text-lg mb-2">
             I&apos;m an aspiring software developer with a passion for creating
             innovative solutions. I am dedicated to continuously learning and
             improving my skills to build efficient, user-friendly applications.
           </p>
+          <div className=" flex flex-row gap-9 mb-3 items-center">
+            <Link
+              href="https://github.com/leryyyyyyy"
+              target="blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                // src="/github-mark-white.png"
+                src={
+                  theme === "light"
+                    ? `/github-mark.png`
+                    : `/github-mark-white.png`
+                }
+                alt="github logo"
+                width={35}
+                height={35}
+                className="object-contain rounded-md flex-shrink-0  hover:scale-110 hover:shadow-md 
+               transition-all duration-200 ease-in-out"
+              />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/john-lery-cruz-b3a255323/"
+              target="blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/linkedIn-logo.png"
+                alt="LinkedIn Logo"
+                width={35}
+                height={35}
+                className="object-contain rounded-md flex-shrink-0 hover:scale-110 hover:shadow-md 
+               transition-all duration-200 ease-in-out"
+              />
+            </Link>
+            <Link
+              href="mailto:cruzjohnlery1@gmail.com"
+              target="blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/gmail-logo.png"
+                alt="Gmail Logo"
+                width={35}
+                height={35}
+                className="object-contain rounded-md flex-shrink-0 hover:scale-110 hover:shadow-md 
+               transition-all duration-200 ease-in-out"
+              />
+            </Link>
+          </div>
+
           {theme === "light" ? <LightButton /> : <DarkButton />}
         </div>
 
@@ -52,6 +102,9 @@ const Hero = () => {
             priority={true}
           />
         </div>
+        {/* <div className=" flex justify-center">
+      
+        </div> */}
         <div className="flex justify-center">
           <Link
             href="/services"
