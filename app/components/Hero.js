@@ -21,9 +21,9 @@ const Hero = () => {
   }
 
   return (
-    <section className="hero bg-cover bg-center h-[80vh] sm:h-[100vh]   pt-9 md:pt-0 md:flex lg:items-center">
-      <div className="container mx-auto flex flex-col lg:flex-row  px-4 py-8 sm:px-6 lg:px-8">
-        <div className="text-center lg:text-left max-w-2xl lg:max-w-2xl xl:max-w-3xl lg:flex-1 mb-8 md:mb-0">
+    <section className="hero bg-cover bg-center lg:h-[100vh]  pt-9 md:pt-0 md:flex lg:items-center">
+      <div className="container mx-auto flex flex-col lg:flex-row px-4 py-8 sm:px-6 lg:px-8">
+        <div className="text-center lg:text-left lg:max-w-xl xl:max-w-2xl lg:flex-1 mb-8 md:mb-0">
           <h2 className=" text-2xl md:text-3xl font-bold mb-4">
             Hi! &nbsp;
             <span

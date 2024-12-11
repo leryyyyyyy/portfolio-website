@@ -31,7 +31,7 @@ const projectsData = [
 function Projects() {
   return (
     <section
-      className=" myProjects pb-8 flex flex-col items-center mt-10 md:mx-6"
+      className="  myProjects pb-8 flex flex-col items-center mt-10  md:mx-6 "
       id="myProjects"
     >
       <h2 className=" text-2xl md:text-3xl font-bold text-center mb-16">
