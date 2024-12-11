@@ -31,13 +31,13 @@ const projectsData = [
 function Projects() {
   return (
     <section
-      className=" myProjects pb-8 flex flex-col items-center mt-10"
+      className=" myProjects pb-8 flex flex-col items-center mt-10 md:mx-6"
       id="myProjects"
     >
       <h2 className=" text-2xl md:text-3xl font-bold text-center mb-16">
         My Projects
       </h2>
-      <div className="grid grid-cols-1 mx-4 lg:mx-0 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 justify-center items-center">
+      <div className=" max-w-7xl grid grid-cols-1 mx-4 lg:mx-0 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 justify-center items-center">
         {projectsData.map((project, index) => (
           <Card
             key={index}

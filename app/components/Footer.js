@@ -18,7 +18,7 @@ const Footer = () => {
     textClasses = "text-secondary";
   }
   return (
-    <footer className=" py-6">
+    <footer className=" py-6 md:mx-6">
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
         <p className="text-xs sm:text-sm text-center md:text-left ">
           &copy; {new Date().getFullYear()} John Lery Cruz. All rights reserved.

@@ -42,9 +42,9 @@ const Navbar = () => {
               <Link href="#Technologies" className="hover:text-gray-400">
                 Technologies
               </Link>
-              <Link href="/contact" className="hover:text-gray-400">
+              {/* <Link href="/contact" className="hover:text-gray-400">
                 Contact
-              </Link>
+              </Link> */}
             </div>
 
             <div className="md:hidden flex items-center">

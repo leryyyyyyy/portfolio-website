@@ -35,10 +35,10 @@ const TechStack = () => {
   ];
 
   return (
-    <section className="py-8 mb-10" id="Technologies">
+    <section className="py-8 mb-10 md:mx-6" id="Technologies">
       <h2 className="text-3xl font-bold text-center mb-8">Technologies</h2>
       <div
-        className={`max-w-5xl mx-6 md:mx-auto p-8 ${bgColor} shadow-lg rounded-lg border border-secondary`}
+        className={`max-w-7xl mx-6 md:mx-auto p-8 ${bgColor} shadow-lg rounded-lg border border-secondary`}
       >
         <div className="flex flex-wrap justify-center items-center gap-8">
           {techStack.map((tech, index) => (
