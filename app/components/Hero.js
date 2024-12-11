@@ -21,11 +21,10 @@ const Hero = () => {
   }
 
   return (
-    <section className="hero bg-cover bg-center h-[100vh]  pt-9 md:pt-0 md:flex lg:items-center">
+    <section className="hero bg-cover bg-center h-[80vh] sm:h-[100vh]   pt-9 md:pt-0 md:flex lg:items-center">
       <div className="container mx-auto flex flex-col lg:flex-row px-4 py-8 sm:px-6 lg:px-8">
-        {/* Left Text */}
         <div className="text-center lg:text-left lg:max-w-xl xl:max-w-2xl lg:flex-1 mb-8 md:mb-0">
-          <h2 className=" text-3xl font-bold mb-4">
+          <h2 className=" text-2xl md:text-3xl font-bold mb-4">
             Hi! &nbsp;
             <span
               className={`relative inline-block  px-4 py-2 rounded-lg ${bgBlur} bg-opacity-30 backdrop-blur-md`}
@@ -33,19 +32,18 @@ const Hero = () => {
               I&apos;m John Lery
             </span>
           </h2>
-          <p className="text-lg mb-2">
+          <p className="text-md sm:text-lg mb-2">
             I&apos;m an aspiring software developer with a passion for creating
             innovative solutions. I am dedicated to continuously learning and
             improving my skills to build efficient, user-friendly applications.
           </p>
-          <div className=" flex flex-row gap-9 mb-3 items-center">
+          <div className=" flex flex-row gap-9 md:mb-3 mt-3 items-center justify-center lg:justify-normal">
             <Link
               href="https://github.com/leryyyyyyy"
               target="blank"
               rel="noopener noreferrer"
             >
               <Image
-                // src="/github-mark-white.png"
                 src={
                   theme === "light"
                     ? `/github-mark.png`
@@ -55,7 +53,7 @@ const Hero = () => {
                 width={35}
                 height={35}
                 className="object-contain rounded-md flex-shrink-0  hover:scale-110 hover:shadow-md 
-               transition-all duration-200 ease-in-out"
+               transition-all duration-200 ease-in-out w-full max-w-6 sm:max-w-7 md:max-w-9"
               />
             </Link>
             <Link
@@ -69,7 +67,7 @@ const Hero = () => {
                 width={35}
                 height={35}
                 className="object-contain rounded-md flex-shrink-0 hover:scale-110 hover:shadow-md 
-               transition-all duration-200 ease-in-out"
+               transition-all duration-200 ease-in-out w-full max-w-6 sm:max-w-7 md:max-w-9"
               />
             </Link>
             <Link
@@ -83,36 +81,38 @@ const Hero = () => {
                 width={35}
                 height={35}
                 className="object-contain rounded-md flex-shrink-0 hover:scale-110 hover:shadow-md 
-               transition-all duration-200 ease-in-out"
+               transition-all duration-200 ease-in-out w-full max-w-6 sm:max-w-7 md:max-w-9"
               />
             </Link>
           </div>
 
-          {theme === "light" ? <LightButton /> : <DarkButton />}
+          <div className=" hidden lg:block ">
+            {theme === "light" ? <LightButton /> : <DarkButton />}
+          </div>
         </div>
 
-        {/* Right Image */}
         <div className="flex justify-center lg:flex-1">
           <Image
             src="/laptop.png"
             alt="Hero Image"
             width={500}
             height={400}
-            className="object-contain rounded-md flex-shrink-0"
+            className="object-contain rounded-md flex-shrink-0 max-w-64 mb-6 sm:mb-0 sm:max-w-80 md:max-w-full "
             priority={true}
           />
         </div>
-        {/* <div className=" flex justify-center">
-      
-        </div> */}
-        <div className="flex justify-center">
+        <div className=" block lg:hidden text-center">
+          {theme === "light" ? <LightButton /> : <DarkButton />}
+        </div>
+
+        {/* <div className="flex justify-center">
           <Link
             href="/services"
             className={`${buttonClasses} px-4 py-2 w-40 text-center rounded-full hover:bg-opacity-80 block lg:hidden`}
           >
             Get Started
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

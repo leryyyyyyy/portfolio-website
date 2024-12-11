@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useTheme } from "../context/ThemeContext";
+import { FiSun, FiMoon } from "react-icons/fi";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,11 +36,11 @@ const Navbar = () => {
               <Link href="/" className="hover:text-gray-400">
                 Home
               </Link>
-              <Link href="/about" className="hover:text-gray-400">
-                About
+              <Link href="#myProjects" className="hover:text-gray-400">
+                My Projects
               </Link>
-              <Link href="/services" className="hover:text-gray-400">
-                Services
+              <Link href="#Technologies" className="hover:text-gray-400">
+                Technologies
               </Link>
               <Link href="/contact" className="hover:text-gray-400">
                 Contact
@@ -61,7 +62,11 @@ const Navbar = () => {
               className="hidden md:flex ml-4 p-2 bg-gray-300 rounded-full hover:bg-gray-400"
               aria-label="Toggle theme"
             >
-              {theme === "light" ? "🌙" : "🌞"}
+              {theme === "light" ? (
+                <FiMoon size={20} className="text-gray-800" />
+              ) : (
+                <FiSun size={20} className="text-yellow-500" />
+              )}
             </button>
           </div>
         </div>
@@ -101,7 +106,11 @@ const Navbar = () => {
               className="ml-4 p-2 bg-gray-300 rounded-full hover:bg-gray-400"
               aria-label="Toggle theme"
             >
-              {theme === "light" ? "🌙" : "🌞"}
+              {theme === "light" ? (
+                <FiMoon size={20} className="text-gray-800" />
+              ) : (
+                <FiSun size={20} className="text-yellow-500" />
+              )}
             </button>
           </div>
         )}

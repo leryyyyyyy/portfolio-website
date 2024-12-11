@@ -4,6 +4,8 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Navbar from "./components/Navbar";
 import { useTheme } from "./context/ThemeContext";
+import TechStack from "./components/TechStack";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const { theme } = useTheme();
@@ -22,6 +24,8 @@ export default function Home() {
         <Navbar />
         <Hero />
         <Projects />
+        <TechStack />
+        <Footer />
       </div>
     </main>
   );
