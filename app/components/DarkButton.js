@@ -4,7 +4,7 @@ function DarkButton() {
   return (
     <div>
       <a
-        href="#_"
+        href="#myProjects"
         className="relative inline-flex items-center justify-start px-5 py-3 overflow-hidden font-bold rounded-full group"
       >
         {/* Background effect */}
@@ -13,7 +13,7 @@ function DarkButton() {
 
         {/* Button Text */}
         <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-black">
-          Get Started →
+          Explore My Work →
         </span>
 
         {/* Border Effect */}

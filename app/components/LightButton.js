@@ -4,7 +4,7 @@ function LightButton() {
   return (
     <div>
       <a
-        href="#_"
+        href="#myProjects"
         className="relative inline-flex items-center justify-start px-5 py-3 overflow-hidden font-bold rounded-full group"
       >
         {/* Background effect for light mode */}
@@ -13,7 +13,7 @@ function LightButton() {
 
         {/* Button Text */}
         <span className="relative w-full text-left text-black transition-colors duration-200 ease-in-out group-hover:text-secondary">
-          Get Started →
+          Explore My Work →
         </span>
 
         {/* Border Effect */}
