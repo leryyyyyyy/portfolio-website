@@ -85,26 +85,20 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              href="/about"
+              href="#myProjects"
               className="block py-2 hover:text-gray-400"
               onClick={toggleMenu}
             >
-              About
+              My Projects
             </Link>
             <Link
-              href="/services"
+              href="#Technologies"
               className="block py-2 hover:text-gray-400"
               onClick={toggleMenu}
             >
-              Services
+              Technologies
             </Link>
-            <Link
-              href="/contact"
-              className="block py-2 hover:text-gray-400"
-              onClick={toggleMenu}
-            >
-              Contact
-            </Link>
+
             <button
               onClick={toggleTheme}
               className="ml-4 p-2 bg-gray-300 rounded-full hover:bg-gray-400"
